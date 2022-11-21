@@ -37,9 +37,9 @@ class Chord:
 
     def __str__(self) -> str:
         return self.plus(0)
-        
+
     def __repr__(self) -> str:
-        return f'Chord({self.__str__})'
+        return f'Chord({self.__str__()})'
 
     def good_structure(self):
         return self.num != None and Chord.is_good_suffix(self.suffix)
